@@ -88,7 +88,7 @@ public class TayJava {
         System.out.println(sayHello + " " + name);
     }
 
-    void greating() {
+    void greeting() {
         String hello = "Hi, This is my first application"; // local variable
     }
 }
