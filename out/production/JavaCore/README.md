@@ -175,7 +175,7 @@ for (int i = 0; i < 10; i++) {
     System.out.println("So: " + i);
 }
 ```
-- __Bối cảnh áp dụng:__ Dùng khi ta muốn dừng vòng lặp ngay lập tức
+- __Bối cảnh áp dụng:__
 #### 3.2 continue
 > Câu lệnh continue được sử dụng trong cấu trúc điều khiển vòng lặp khi bạn cần nhảy đến vòng lặp tiếp theo của vòng lặp ngay lập tức. Nó có thể được sử dụng với vòng lặp for hoặc vòng lặp while.
 
@@ -184,27 +184,16 @@ for (int i = 0; i < 10; i++) {
 > Chúng ta có thể sử dụng câu lệnh continue của Java trong tất cả các loại vòng lặp như vòng lặp for, vòng lặp while và vòng lặp do-while.
 - Cú pháp:
 ```java
-jump-statement;    
-continue; 
+
 ```
 - Ví dụ:
 ```java
-for (int i = 0; i < 10; i++) {
-    if (i==5) {
-        continue; // gặp lệnh continue for sẽ dùng ở đây và chạy vòng tiếp theo
-    }
-    System.out.println("So: " + i);
-}
+
 ```
-- __Bối cảnh áp dụng:__ Sử dụng khi ta muốn bỏ qua điều kiện nào đó khi duyệt mảng
+- __Bối cảnh áp dụng:__
 
 ---
 ### 4. Chú thích trong java
-```java
-
-// chu thich cho 
-// chu cho function
-```
 
 ---
 ### 5. Thực hành trực tiếp
