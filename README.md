@@ -1,4 +1,4 @@
-# Các câu lênh điều khiển trong Java
+# Các Câu Lệnh Điều Khiển Trong Java
 > Trình biên dịch Java thực thi mã từ trên xuống dưới. Các câu lệnh trong mã được thực thi theo thứ tự xuất hiện của chúng. Tuy nhiên, Java cung cấp các câu lệnh có thể được sử dụng để kiểm soát luồng mã Java. Các câu lệnh như vậy được gọi là câu lệnh kiểm soát luồng. Đây là một trong những tính năng cơ bản của Java, cung cấp luồng chương trình mượt mà.
 
 ### 1. Câu lệnh điều kiện (Decision Making statements)
@@ -19,7 +19,7 @@ if (age >= 18) {
 }
 ```
 - __Bối cảnh áp dụng:__ kiểm tra điều kiện để thực hiện 1 hành động nào đó liên quan
-Giả sử khi user gứi thông tin đăng ký tới hệ thống thì các thông tin đó cần phải được xác nhận là hợp lệ nếu họ nhập không đúng thì chúng ta sẽ ko cho họ đăng ký và yêu cầu nhập lại
+Giả sử khi user gửi thông tin đăng ký tới hệ thống thì các thông tin đó cần phải được xác nhận là hợp lệ nếu họ nhập không đúng thì chúng ta sẽ ko cho họ đăng ký và yêu cầu nhập lại
 
 
 #### 1.2 Switch
@@ -143,7 +143,7 @@ while (x <= 10) {
     x++;
 }
 ```
-- __Bối cảnh áp dụng:__ dùng để duyệt dang sách theo điều kiện chỉ định trước
+- __Bối cảnh áp dụng:__ dùng để duyệt danh sách theo điều kiện chỉ định trước
 
 #### 2.4 do while
 - Cú pháp:
@@ -166,7 +166,7 @@ do {
     y++;
 } while (y <= 10);
 ```
-- __Bối cảnh áp dụng:__ dùng để duyệt dang sách theo điều kiện chỉ định sau
+- __Bối cảnh áp dụng:__ dùng để duyệt danh sách theo điều kiện chỉ định sau
 
 ### 3. Câu lệnh ngắt quãng (Jump statements)
 #### 3.1 break
@@ -191,8 +191,8 @@ break;
 ```java
 for (int i = 0; i < 10; i++) {
     if (i==5) {
-        break; // ngặt vong lặp ở đây
-    }
+        break; // ngắt vòng lặp ở đây
+        }
     System.out.println("So: " + i);
 }
 ```
