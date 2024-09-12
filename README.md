@@ -60,13 +60,19 @@ switch(expression){
 ### 2. Câu lệnh lặp (Loop statements)
 ![loop-statement.png](loop-statement.png)
 #### 2.1 for
+
 > Vòng lặp for của Java được sử dụng để lặp lại một phần của chương trình nhiều lần. Nếu số lần lặp cố định, nên sử dụng vòng lặp for.
+
 - Cú pháp:
 ```java
 for(initialization; condition; increment/decrement){
     //statement or code to be executed    
 } 
 ```
+- Flowchart
+
+![for.png](for.png)
+
 - Ví dụ:
 ```java
 for (int i = 0; i < 10; i++) {
@@ -124,6 +130,11 @@ while (condition){
 I ncrement / decrement statement  
 }
 ```
+
+- Flowchart
+
+![while.png](while.png)
+
 - Ví dụ:
 ```java
 int x = 5;
@@ -140,8 +151,13 @@ while (x <= 10) {
 do{    
 //code to be executed / loop body  
 //update statement   
-}while (condition);   
+} while (condition);
 ```
+
+- Flowchart
+
+![do-while.png](do-while.png)
+
 - Ví dụ:
 ```java
 int y = 5;
@@ -166,6 +182,11 @@ do {
 jump-statement;    
 break;  
 ```
+
+- Flowchart
+
+![break.png](break.png)
+
 - Ví dụ:
 ```java
 for (int i = 0; i < 10; i++) {
@@ -187,6 +208,12 @@ for (int i = 0; i < 10; i++) {
 jump-statement;    
 continue; 
 ```
+
+- Flowchart
+
+![continue.png](continue.png)
+
+
 - Ví dụ:
 ```java
 for (int i = 0; i < 10; i++) {
@@ -202,9 +229,30 @@ for (int i = 0; i < 10; i++) {
 ### 4. Chú thích trong java
 ```java
 
-// chu thich cho 
-// chu cho function
+// chu thich cho dòng
+
+/**
+ * Mô tả tên chức năng của method
+ * @param args mô tả tham số
+ */
+```
+- Ví dụ:
+```java
+    /**
+ * In ra họ và tên
+ *
+ * @param name string
+ */
+private void print(String name) {
+
+    // câu lệnh để in ra
+    System.out.println("Name: " + name);
+}
 ```
 
+
 ---
-### 5. Thực hành trực tiếp
+### 5. Bài tập
+
+Tự thực hành theo ví dụ phía trên
+

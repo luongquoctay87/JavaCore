@@ -4,7 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TayJava {
-
+    /**
+     * Mô tả tên chức năng của method
+     *
+     * @param args mô tả tham số
+     */
     public static void main(String[] args) {
 
 //        int age = 25;
@@ -83,7 +87,7 @@ public class TayJava {
 
         System.out.println("------- BREAK ---------");
         for (int i = 0; i < 10; i++) {
-            if (i==5) {
+            if (i == 5) {
                 break;
             }
             System.out.println("So: " + i);
@@ -92,10 +96,21 @@ public class TayJava {
         System.out.println("------- CONTINUE ---------");
         // continue
         for (int i = 0; i < 10; i++) {
-            if (i==5) {
+            if (i == 5) {
                 continue; // gặp lệnh continue for sẽ dùng ở đây và chạy vòng tiếp theo
             }
             System.out.println("So: " + i);
         }
+    }
+
+    /**
+     * In ra họ và tên
+     *
+     * @param name string
+     */
+    private void print(String name) {
+
+        // câu lệnh để in ra
+        System.out.println("Name: " + name);
     }
 }
