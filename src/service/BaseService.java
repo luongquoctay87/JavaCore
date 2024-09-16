@@ -1,6 +1,6 @@
 package src.service;
 
-// BaseEntity = Super interface
+// Super interface
 public interface BaseService {
 
     default void printMessage() {

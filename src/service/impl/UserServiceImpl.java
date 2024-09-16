@@ -4,7 +4,7 @@ import src.model.User;
 import src.service.CommonService;
 import src.service.UserService;
 
-// class UserServiceImpl implements (thực thi) interface UserService
+// class UserServiceImpl implements (thực thi) interface UserService và CommonService
 public class UserServiceImpl implements UserService, CommonService {
     @Override
     public int addUser(User user) {

@@ -1,4 +1,4 @@
-package src;
+package src.sample;
 
 import java.time.LocalDate;
 
@@ -20,7 +20,7 @@ public interface SampleInterface {
     }
 
     // static method
-    static String getCurrentTime(){
+    static String getCurrentTime() {
         return String.valueOf(LocalDate.now());
     }
 
