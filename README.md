@@ -5,12 +5,12 @@
 #### 1.1 Giới thiệu về Java Arrays
 Mảng Java là một đối tượng chứa các phần tử có cùng kiểu dữ liệu. Các phần tử của một mảng được lưu trữ trong một vị trí bộ nhớ liền kề. Đây là một cấu trúc dữ liệu để lưu trữ các phần tử giống nhau. Chúng ta chỉ có thể lưu trữ một tập hợp các phần tử cố định trong một mảng Java.
 
-Chúng ta có thể lưu các giá trị nguyên thuỷ hoặc các đối tượng trong array và tất cả các phâng tử đều được đánh chỉ mục.
+Chúng ta có thể lưu các giá trị nguyên thuỷ hoặc các đối tượng trong array và tất cả các phần tử đều được đánh chỉ mục.
 
 ![java-array.png](images/java-array.png)
 
 - Ưu điểm:
-  - Tối ưu code: Nó làm cho code được tối ưu hoá vì chung ta dễ dàng sắp xếp và truy xuất dữ liệu.
+  - Tối ưu code: Nó làm cho code được tối ưu hoá vì chúng ta dễ dàng sắp xếp và truy xuất dữ liệu.
   - Truy xuất ngẫu nhiên: Chúng ta có thể lấy bất kỳ dữ liệu nào theo chỉ mục.
 
 - Nhược điểm:
@@ -316,35 +316,35 @@ String s1 = new String("Welcome to Tay Java");
 Trong trường hợp như vậy, JVM sẽ tạo một đối tượng String mới trong bộ nhớ heap bình thường (không phải pool) và giá trị "Welcome" theo nghĩa đen sẽ được đặt trong __Spring constant pool__. Biến s sẽ tham chiếu đến đối tượng trong heap (không phải pool).
 
 ##### 2.2.3 Các method trong class String
-| #  | Method                                                                                | Mô tả                                                                       |
-|----|---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| 1  | char charAt(int index)                                                                | Trả về giá trị `char` cho index cụ thể                                      |
-| 2  | int length()                                                                          | Trả về độ dài của `string`                                                  |
-| 3  | static String format(String format, Object... args)                                   | Trả về một `String` đã được định dạng                                       |
-| 4  | static String format(Locale locale, String format, Object... args)                    | T                                                                           |
-| 5  | String substring(int beginIndex)                                                      | Trả về `substring` từ vị trí index cho trước                                |
-| 6  | String substring(int beginIndex, int endIndex)                                        | Trả về `substring` từ index bắt đầu đến index kết thúc                      |
-| 7  | boolean contains(CharSequence s)                                                      | Nó trả về giá trị đúng hoặc sai sau khi khớp với `string` giá trị char      |
-| 8  | static String join(CharSequence delimiter, CharSequence... elements)                  | Trả về một `string` đã nối                                                  |
-| 9  | static String join(CharSequence delimiter, Iterable<? extends CharSequence> elements) | Trả về một `string` đã nối                                                  |
-| 10 | boolean equals(Object another)                                                        | Kiểm tra xem `string` có giống với đối tượng đã cho hay không               |
-| 11 | boolean isEmpty()                                                                     | Kiểm tra `string` có bị rỗng không (null hoặc blank) không ?                |
-| 12 | String concat(String str)                                                             | Nối `string` đã chỉ định                                                    |
-| 13 | String replace(char old, char new)                                                    | Thay thế tất cả các lần xuất hiện của giá trị `char` được chỉ định          |
-| 14 | String replace(CharSequence old, CharSequence new)                                    | Thay thế tất cả các lần xuất hiện của `CharSequence` đã chỉ định            |
-| 15 | static String equalsIgnoreCase(String another)                                        | So sánh với một `string` khác không kiểm tra chữ hoa chữ thường             |
-| 16 | String[] split(String regex)                                                          | Trả về một `string` phân tách khớp với `regex`                              |
-| 17 | String[] split(String regex, int limit)                                               | Trả về một `string` phân tách khớp với `regex` và limit                     |
-| 18 | String intern()                                                                       | Trả về một `string` đã được đồng bộ trong `String contant pool`             |
-| 19 | int indexOf(int ch)                                                                   | Trả về giá trị `char` được chỉ định                                         |
-| 20 | int indexOf(int ch, int fromIndex)                                                    | Trả về giá trị `char` được chỉ định bắt đầu theo `index` đã cho             |
-| 21 | int indexOf(String substring)                                                         | Trả về chỉ mục `string` con được chỉ định                                   |
-| 22 | int indexOf(String substring, int fromIndex)                                          | Trả về chỉ mục `string` con được chỉ định bắt đầu theo `index` đã cho       |
-| 23 | String toLowerCase()                                                                  | Trả về một `string thường`                                                  |
-| 24 | String toLowerCase(Locale locale)                                                     | Trả về một `string thường` theo ngôn ngữ được chỉ định                      |
-| 25 | String toUpperCase()                                                                  | Trả về một `STRING IN HOA`                                                  |
-| 26 | String toUpperCase(Locale locale)                                                     | Trả về một `STRING IN HOA` theo ngôn ngữ được chỉ định                      |
-| 27 | String trim()                                                                         | Loại bỏ khoảng trắng ở trước và sau String                                  |
+| #  | Method                                                                                | Mô tả                                                                      |
+|----|---------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
+| 1  | char charAt(int index)                                                                | Trả về giá trị `char` cho index cụ thể                                     |
+| 2  | int length()                                                                          | Trả về độ dài của `string`                                                 |
+| 3  | static String format(String format, Object... args)                                   | Trả về một `String` đã được định dạng                                      |
+| 4  | static String format(Locale locale, String format, Object... args)                    | Trả về `String` định dạng theo ngôn ngữ đã cho                             |
+| 5  | String substring(int beginIndex)                                                      | Trả về `substring` từ vị trí index cho trước                               |
+| 6  | String substring(int beginIndex, int endIndex)                                        | Trả về `substring` từ index bắt đầu đến index kết thúc                     |
+| 7  | boolean contains(CharSequence s)                                                      | Nó trả về giá trị đúng hoặc sai sau khi khớp với `string` giá trị char     |
+| 8  | static String join(CharSequence delimiter, CharSequence... elements)                  | Trả về một `string` đã nối                                                 |
+| 9  | static String join(CharSequence delimiter, Iterable<? extends CharSequence> elements) | Trả về một `string` đã nối                                                 |
+| 10 | boolean equals(Object another)                                                        | Kiểm tra xem `string` có giống với đối tượng đã cho hay không              |
+| 11 | boolean isEmpty()                                                                     | Kiểm tra `string` có bị rỗng không (null hoặc blank) không ?               |
+| 12 | String concat(String str)                                                             | Nối `string` đã chỉ định                                                   |
+| 13 | String replace(char old, char new)                                                    | Thay thế tất cả các lần xuất hiện của giá trị `char` được chỉ định         |
+| 14 | String replace(CharSequence old, CharSequence new)                                    | Thay thế tất cả các lần xuất hiện của `CharSequence` đã chỉ định           |
+| 15 | static String equalsIgnoreCase(String another)                                        | So sánh với một `string` khác không kiểm tra chữ hoa chữ thường            |
+| 16 | String[] split(String regex)                                                          | Trả về một `string` phân tách khớp với `regex`                             |
+| 17 | String[] split(String regex, int limit)                                               | Trả về một `string` phân tách khớp với `regex` và limit                    |
+| 18 | String intern()                                                                       | Trả về một `string` đã được đồng bộ trong `String constant pool`           |
+| 19 | int indexOf(int ch)                                                                   | Trả về giá trị `char` được chỉ định                                        |
+| 20 | int indexOf(int ch, int fromIndex)                                                    | Trả về giá trị `char` được chỉ định bắt đầu theo `index` đã cho            |
+| 21 | int indexOf(String substring)                                                         | Trả về chỉ mục `string` con được chỉ định                                  |
+| 22 | int indexOf(String substring, int fromIndex)                                          | Trả về chỉ mục `string` con được chỉ định bắt đầu theo `index` đã cho      |
+| 23 | String toLowerCase()                                                                  | Trả về một `string thường`                                                 |
+| 24 | String toLowerCase(Locale locale)                                                     | Trả về một `string thường` theo ngôn ngữ được chỉ định                     |
+| 25 | String toUpperCase()                                                                  | Trả về một `STRING IN HOA`                                                 |
+| 26 | String toUpperCase(Locale locale)                                                     | Trả về một `STRING IN HOA` theo ngôn ngữ được chỉ định                     |
+| 27 | String trim()                                                                         | Loại bỏ khoảng trắng ở trước và sau String                                 |
 | 28 | static String valueOf(int value)                                                      | Chuyển đổi kiểu từ dữ liệu đã cho thành `string`. Đây là overloading method |
 
 ### 3 Câu hỏi phỏng vấn
