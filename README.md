@@ -16,7 +16,7 @@ Chúng ta có thể lưu các giá trị nguyên thuỷ hoặc các đối tư�
 - Nhược điểm:
   - Giới hạn kích thước: Chúng ta chỉ có thể lưu trữ kích thước cố định của các phần tử trong mảng. Nó không tăng kích thước khi chạy chương trình. Để giải quyết vấn đề này Java collection có thể tự động gia tăng kích thước của array.
 
-#### 1.2 Các loại Arrays__
+#### 1.2 Các loại Arrays
 
 Có 2 loại array:
 - Mảng một chiều (Single Dimensional Array)
@@ -24,15 +24,15 @@ Có 2 loại array:
 
 ##### 1.2.1 Mảng một chiều (Single Dimensional Array)
 - Cú pháp
-  ```java
-  // Định nghĩa array
-  dataType[] arr; (or)  
-  dataType []arr; (or)  
-  dataType arr[];
+```java
+// Định nghĩa array
+dataType[] arr; (or)  
+dataType []arr; (or)  
+dataType arr[];
 
-  // Khởi tạo
-  arrayRefVa r= new datatype[size];  
-  ```
+// Khởi tạo
+arrayRefVa r= new datatype[size];  
+```
   
 - Ví dụ
   ```java
@@ -55,9 +55,8 @@ Có 2 loại array:
         System.out.println(s);
     }
   }
-  ```
-- Test
-  ```text
+
+  --- Kết quả ---
   13
   49
   77
@@ -69,20 +68,18 @@ Có 2 loại array:
   ```
 
 - Định nghĩa, khai báo và khởi tạo array
-    ```java
-    public static void main(String[] args) {
-        //declaration, instantiation and initialization
-        int xArr[] = {1, 3, 7};
-    
-        // in mảng bằng foreach
-        for (int i : xArr) {
-            System.out.println(i);
-        }
-    }
-    ```
+  ```java
+  public static void main(String[] args) {
+      //declaration, instantiation and initialization
+      int xArr[] = {1, 3, 7};
+  
+      // in mảng bằng foreach
+      for (int i : xArr) {
+          System.out.println(i);
+      }
+  }
 
-- Test
-  ```text
+  --- Kết quả ---
   1
   3
   7
@@ -104,166 +101,165 @@ Có 2 loại array:
     // dòng này bị lỗi ArrayIndexOutOfBoundsException do mảng chỉ có 3 phần tử và index = 3 là không tồn tại.
     System.out.println(yArr[3]);
   }
+
+  --- Kết quả ---
+  Độ dài của yArr = 3
+  2
+  4
+  6
+  Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+  at src.Main.main(Main.java:32)
   ```
-    
-    - Test
-    ```java
-    Độ dài của yArr = 3
-    2
-    4
-    6
-    Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
-    at src.Main.main(Main.java:32)
-    ```
 
 ##### 1.2.2 Mảng đa chiều (Multidimensional Array)
 
 - Cú pháp
-```java
-dataType[][] arr; (or)  
-dataType [][]arr; (or)  
-dataType arr[][]; (or)  
-dataType []arr[];  
-```
+  ```java
+  dataType[][] arr; (or)  
+  dataType [][]arr; (or)  
+  dataType arr[][]; (or)  
+  dataType []arr[];  
+  ```
 
 - Ví dụ
-```java
-int[][] xArr = new int[3][3]; // 3 = row and 3 = column
-
-xArr[0][0] = 1;
-xArr[0][1] = 2;
-xArr[0][2] = 3;
-
-xArr[1][0] = 4;
-xArr[1][1] = 5;
-xArr[1][2] = 6;
-
-xArr[2][0] = 7;
-xArr[2][1] = 8;
-xArr[2][2] = 9;
-
-System.out.println("--- xArr ---");
-for (int i = 0; i < 3; i++) {
-  for (int j = 0; j < 3; j++) {
-    System.out.println(xArr[i][j]);
-  }
-  System.out.println();
-}
-
-int[][] yArr = {{10, 20, 30}, {40, 50, 60}, {70, 80, 90}};
-System.out.println("--- yArr ---");
-for (int i = 0; i < 3; i++) {
-  for (int j = 0; j < 3; j++) {
-    System.out.println(yArr[i][j]);
-  }
+  ```java
+  int[][] xArr = new int[3][3]; // 3 = row and 3 = column
+  
+  xArr[0][0] = 1;
+  xArr[0][1] = 2;
+  xArr[0][2] = 3;
+  
+  xArr[1][0] = 4;
+  xArr[1][1] = 5;
+  xArr[1][2] = 6;
+  
+  xArr[2][0] = 7;
+  xArr[2][1] = 8;
+  xArr[2][2] = 9;
+  
+  System.out.println("--- xArr ---");
+  for (int i = 0; i < 3; i++) {
+    for (int j = 0; j < 3; j++) {
+      System.out.println(xArr[i][j]);
+    }
     System.out.println();
-}
-```
-
-Output
-```text
---- xArr ---
-1
-2
-3
-
-4
-5
-6
-
-7
-8
-9
-
---- yArr ---
-10
-20
-30
-
-40
-50
-60
-
-70
-80
-90
-```
+  }
+  
+  int[][] yArr = {{10, 20, 30}, {40, 50, 60}, {70, 80, 90}};
+  System.out.println("--- yArr ---");
+  for (int i = 0; i < 3; i++) {
+    for (int j = 0; j < 3; j++) {
+      System.out.println(yArr[i][j]);
+    }
+      System.out.println();
+  }
+  
+  --- Kết quả --
+  --- xArr ---
+  1
+  2
+  3
+  
+  4
+  5
+  6
+  
+  7
+  8
+  9
+  
+  --- yArr ---
+  10
+  20
+  30
+  
+  40
+  50
+  60
+  
+  70
+  80
+  90
+  ```
 
 ##### 1.2.3 Jagged Array (Mảng răng cưa)
 
-```java
-public static void main(String[] args) {
-// Mảng 2 chiều
+![jagged-array.png](images/jagged-array.png)
+
+  ```java
+  public static void main(String[] args) {
+    // Mảng 2 chiều
     int arr[][] = new int[3][];
     arr[0] = new int[3];
     arr[1] = new int[5];
     arr[2] = new int[2];
 
-// Tạo mảng răng cưa
+    // Tạo mảng răng cưa
     int count = 0;
     for (int i = 0; i < arr.length; i++)
         for (int j = 0; j < arr[i].length; j++)
             arr[i][j] = count++;
 
-// printing the data of a jagged array
+    // in ra mảng
     for (int i = 0; i < arr.length; i++) {
         for (int j = 0; j < arr[i].length; j++) {
             System.out.print(arr[i][j] + " ");
         }
         System.out.println();//new line
     }
-}
-```
-
-Output
-```text
-0 1 2 
-3 4 5 6 7 
-8 9 
-```
-
+  }
+  
+  --- Kết quả ---
+  
+  0 1 2 
+  3 4 5 6 7 
+  8 9 
+  ```
 
 
-- Clone Array
-```java
-public static void main(String[] args) {
-    
-    System.out.println("--- zArr ---");
-    int[] zArr = yArr[0].clone(); // Clone array
-    for (int i : zArr) {
-        System.out.println(i);
-    }
-}
-```
-Test
-```text
---- zArr ---
-10
-20
-30
-```
+##### 1.2.4 Clone Array
+  ```java
+  public static void main(String[] args) {
+      
+      System.out.println("--- zArr ---");
+      int[] zArr = yArr[0].clone(); // Clone array
+      for (int i : zArr) {
+          System.out.println(i);
+      }
+  }
+  
+  --- Kết quả ---
+  
+  10
+  20
+  30
+  ```
 
-- Copy Array
+##### 1.2.5 Copy Array
 
-Cú pháp
-```java
-public static void arraycopy(
-  Object src, int srcPos,Object dest, int destPos, int length  
-) 
-```
+- Cú pháp
+  ```java
+  public static void arraycopy(
+    Object src, int srcPos,Object dest, int destPos, int length  
+  ) 
+  ```
 
-Ví dụ
-```java
-public static void main(String[] args) {
-    char[] fromArr = {'T', 'a', 'y', 'J', 'a', 'v', 'a'};
-    char[] toArr = new char[4];
-
-    // copy Java từ fromArr tới toArr
-    System.arraycopy(fromArr, 3, toArr, 0, 4);
-
-    System.out.println(String.copyValueOf(toArr));
-}
-```
+- Ví dụ
+  ```java
+  public static void main(String[] args) {
+      char[] fromArr = {'T', 'a', 'y', 'J', 'a', 'v', 'a'};
+      char[] toArr = new char[4];
+  
+      // copy Java từ fromArr tới toArr
+      System.arraycopy(fromArr, 3, toArr, 0, 4);
+  
+      System.out.println(String.copyValueOf(toArr));
+  }
+  
+  --- Kết quả ---
+  
+  Java
+  ```
 
 ### 2. Java String
 
@@ -275,7 +271,7 @@ Trong Java, String về cơ bản là một đối tượng biểu diễn chuỗ
 char[] ch = {'T', 'a', 'y', 'J', 'a', 'v', 'a'};
 String s = new String(ch);
 ```
->>
+&rarr;
 ```java
 String s = "TayJava";
 ```
@@ -320,36 +316,39 @@ String s1 = new String("Welcome to Tay Java");
 Trong trường hợp như vậy, JVM sẽ tạo một đối tượng String mới trong bộ nhớ heap bình thường (không phải pool) và giá trị "Welcome" theo nghĩa đen sẽ được đặt trong __Spring constant pool__. Biến s sẽ tham chiếu đến đối tượng trong heap (không phải pool).
 
 ##### 2.2.3 Các method trong class String
-| #  | Method                                              | Mô tả                                      |
-|----|-----------------------------------------------------|--------------------------------------------|
-| 1  | char charAt(int index)                              | Trả về giá trị char cho index cụ thể       |
-| 2  | int length()                                        | Trả về độ dài của String                   |
-| 3  | static String format(String format, Object... args) | Trả về một String đã được định dạng        |
-| 4  | String substring(int beginIndex)                    | Trả về substring từ vị trí index cho trước |
-| 5  | String substring(int beginIndex, int endIndex)                                                    |                                            |
-| 6  |                                                     |                                            |
-| 7  |                                                     |                                            |
-| 8  |                                                     |                                            |
-| 9  |                                                     |                                            |
-| 10 |                                                     |                                            |
-| 11 |                                                     |                                            |
-| 12 |                                                     |                                            |
-| 13 |                                                     |                                            |
-| 14 |                                                     |                                            |
-| 15 |                                                     |                                            |
-| 16 |                                                     |                                            |
-| 17 |                                                     |                                            |
-| 18 |                                                     |                                            |
-| 19 |                                                     |                                            |
-| 20 |                                                     |                                            |
-| 21 |                                                     |                                            |
-| 22 |                                                     |                                            |
-| 23 |                                                     |                                            |
-| 24 |                                                     |                                            |
-| 25 |                                                     |                                            |
-| 26 |                                                     |                                            |
-| 27 |                                                     |                                            |
-| 28 |                                                     |                                            |
+| #  | Method                                                                                | Mô tả                                                                       |
+|----|---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| 1  | char charAt(int index)                                                                | Trả về giá trị `char` cho index cụ thể                                      |
+| 2  | int length()                                                                          | Trả về độ dài của `string`                                                  |
+| 3  | static String format(String format, Object... args)                                   | Trả về một `String` đã được định dạng                                       |
+| 4  | static String format(Locale locale, String format, Object... args)                    | T                                                                           |
+| 5  | String substring(int beginIndex)                                                      | Trả về `substring` từ vị trí index cho trước                                |
+| 6  | String substring(int beginIndex, int endIndex)                                        | Trả về `substring` từ index bắt đầu đến index kết thúc                      |
+| 7  | boolean contains(CharSequence s)                                                      | Nó trả về giá trị đúng hoặc sai sau khi khớp với `string` giá trị char      |
+| 8  | static String join(CharSequence delimiter, CharSequence... elements)                  | Trả về một `string` đã nối                                                  |
+| 9  | static String join(CharSequence delimiter, Iterable<? extends CharSequence> elements) | Trả về một `string` đã nối                                                  |
+| 10 | boolean equals(Object another)                                                        | Kiểm tra xem `string` có giống với đối tượng đã cho hay không               |
+| 11 | boolean isEmpty()                                                                     | Kiểm tra `string` có bị rỗng không (null hoặc blank) không ?                |
+| 12 | String concat(String str)                                                             | Nối `string` đã chỉ định                                                    |
+| 13 | String replace(char old, char new)                                                    | Thay thế tất cả các lần xuất hiện của giá trị `char` được chỉ định          |
+| 14 | String replace(CharSequence old, CharSequence new)                                    | Thay thế tất cả các lần xuất hiện của `CharSequence` đã chỉ định            |
+| 15 | static String equalsIgnoreCase(String another)                                        | So sánh với một `string` khác không kiểm tra chữ hoa chữ thường             |
+| 16 | String[] split(String regex)                                                          | Trả về một `string` phân tách khớp với `regex`                              |
+| 17 | String[] split(String regex, int limit)                                               | Trả về một `string` phân tách khớp với `regex` và limit                     |
+| 18 | String intern()                                                                       | Trả về một `string` đã được đồng bộ trong `String contant pool`             |
+| 19 | int indexOf(int ch)                                                                   | Trả về giá trị `char` được chỉ định                                         |
+| 20 | int indexOf(int ch, int fromIndex)                                                    | Trả về giá trị `char` được chỉ định bắt đầu theo `index` đã cho             |
+| 21 | int indexOf(String substring)                                                         | Trả về chỉ mục `string` con được chỉ định                                   |
+| 22 | int indexOf(String substring, int fromIndex)                                          | Trả về chỉ mục `string` con được chỉ định bắt đầu theo `index` đã cho       |
+| 23 | String toLowerCase()                                                                  | Trả về một `string thường`                                                  |
+| 24 | String toLowerCase(Locale locale)                                                     | Trả về một `string thường` theo ngôn ngữ được chỉ định                      |
+| 25 | String toUpperCase()                                                                  | Trả về một `STRING IN HOA`                                                  |
+| 26 | String toUpperCase(Locale locale)                                                     | Trả về một `STRING IN HOA` theo ngôn ngữ được chỉ định                      |
+| 27 | String trim()                                                                         | Loại bỏ khoảng trắng ở trước và sau String                                  |
+| 28 | static String valueOf(int value)                                                      | Chuyển đổi kiểu từ dữ liệu đã cho thành `string`. Đây là overloading method |
+
+
+
 
 
   
