@@ -347,6 +347,26 @@ Trong trường hợp như vậy, JVM sẽ tạo một đối tượng String m�
 | 27 | String trim()                                                                         | Loại bỏ khoảng trắng ở trước và sau String                                  |
 | 28 | static String valueOf(int value)                                                      | Chuyển đổi kiểu từ dữ liệu đã cho thành `string`. Đây là overloading method |
 
+### 3 Câu hỏi phỏng vấn
+##### 1. So sánh string s1 và s2
+
+```java
+String s1 = "Tay Java";
+String s2 = new String("Tay Java");
+
+if (s1.equals(s2)) {
+  System.out.println("giống nhau");
+} else {
+  System.out.println("khác nhau");
+}
+
+if (s1 == s2) {
+  System.out.println("giống nhau");
+} else {
+  System.out.println("khác nhau");
+}
+```
+Kết quả in sẽ là gì và tại sao ?
 
 
 

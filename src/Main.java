@@ -101,13 +101,13 @@ public class Main {
 //        }
 
 
-        char[] fromArr = {'T', 'a', 'y', 'J', 'a', 'v', 'a'};
-        char[] toArr = new char[4];
-
-        // copy Java từ fromArr tới toArr
-        System.arraycopy(fromArr, 3, toArr, 0, 4);
-
-        System.out.println(String.copyValueOf(toArr));
+//        char[] fromArr = {'T', 'a', 'y', 'J', 'a', 'v', 'a'};
+//        char[] toArr = new char[4];
+//
+//        // copy Java từ fromArr tới toArr
+//        System.arraycopy(fromArr, 3, toArr, 0, 4);
+//
+//        System.out.println(String.copyValueOf(toArr));
 
 
         // === Java String ==
@@ -118,6 +118,7 @@ public class Main {
 //        if (s.isEmpty()){
 //            System.out.println("rong");
 //        }
+
 
     }
 }
