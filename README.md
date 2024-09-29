@@ -3,6 +3,8 @@
 - Internationalization = i18n (Quốc tế hoá)
 - Localization = l10n (Bản địa hoá)
 
+![internationalization.png](internationalization.png)
+
 ### 1. Internationalization = i18n (Quốc tế hoá)
 Trước khi áp dụng I18N chúng ta cần hiểu một số dữ liệu cần phụ thuộc khu vực địa lý và văn hoá.
 - Messages
