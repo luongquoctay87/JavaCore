@@ -6,7 +6,7 @@ import java.net.URL;
 
 public class SampleURLReader {
     public static void main(String[] args) throws Exception {
-        URL url = new URL("https://tayjava.vn");
+        URL url = new URL("http://localhost:8082/user/list");
         BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
 
         String inputLine;

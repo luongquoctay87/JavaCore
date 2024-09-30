@@ -143,52 +143,51 @@ Java Networking rất hữu ích trong các ứng dụng hiện đại như web 
 - **Tính bảo mật**: Java cung cấp các công cụ mạnh mẽ để bảo vệ kết nối mạng, bao gồm SSL/TLS và các API cho phép mã hóa và xác thực.
 ---
 
-
 ## Câu hỏi phỏng vấn
-### 1. Câu hỏi cơ bản:
-- Java Networking là gì?
+### I. Câu hỏi cơ bản
+#### 1. Java Networking là gì?
 > Có thể giải thích khái niệm Java Networking và các thành phần chính của nó?
 
-- Phân biệt TCP và UDP trong Java Networking.
+#### 2. Phân biệt TCP và UDP trong Java Networking
 > Hãy giải thích sự khác biệt giữa TCP (Transmission Control Protocol) và UDP (User Datagram Protocol).
 
-- Lớp InetAddress trong Java dùng để làm gì?
+#### 3. Lớp InetAddress trong Java dùng để làm gì ?
 > Hãy giải thích chức năng của lớp InetAddress và cách nó được sử dụng trong Java Networking.
 
-- Bạn sẽ làm gì để tạo một kết nối TCP giữa server và client trong Java?
+#### 4. Bạn sẽ làm gì để tạo một kết nối TCP giữa server và client trong Java ?
 > Hãy mô tả cách sử dụng ServerSocket và Socket để thiết lập một kết nối TCP giữa server và client.
 
-- Làm thế nào để gửi và nhận dữ liệu qua kết nối TCP trong Java?
+#### 5. Làm thế nào để gửi và nhận dữ liệu qua kết nối TCP trong Java ?
 > Hãy giải thích cách sử dụng InputStream và OutputStream để gửi và nhận dữ liệu qua một kết nối TCP.
 
-### 2. Câu hỏi nâng cao:
-- Giải thích sự khác nhau giữa Socket và ServerSocket.
+### II. Câu hỏi nâng cao
+#### 1. Giải thích sự khác nhau giữa Socket và ServerSocket ?
 > Hãy so sánh giữa Socket và ServerSocket trong Java và chức năng của từng lớp.
 
-- Lớp DatagramSocket và DatagramPacket được sử dụng như thế nào trong UDP?
+#### 2. Lớp DatagramSocket và DatagramPacket được sử dụng như thế nào trong UDP ?
 > Hãy giải thích cách sử dụng DatagramSocket và DatagramPacket để gửi và nhận dữ liệu trong giao thức UDP.
 
-- Cách xử lý nhiều client kết nối tới server trong Java Networking.
+#### 3. Cách xử lý nhiều client kết nối tới server trong Java Networking
 > Hãy giải thích cách xử lý nhiều client kết nối tới một server, đặc biệt là cách sử dụng đa luồng (multithreading).
 
-- Làm thế nào để đọc dữ liệu từ một URL trong Java?
+#### 4. Làm thế nào để đọc dữ liệu từ một URL trong Java ?
 > Hãy mô tả cách sử dụng lớp URL và URLConnection để truy xuất dữ liệu từ một URL.
 
-- Sự khác biệt giữa InputStreamReader và BufferedReader trong việc đọc dữ liệu từ mạng là gì?
+#### 5. Sự khác biệt giữa InputStreamReader và BufferedReader trong việc đọc dữ liệu từ mạng là gì ?
 > Hãy giải thích sự khác nhau và khi nào nên sử dụng InputStreamReader và BufferedReader trong lập trình mạng.
 
-### 3. Câu hỏi tình huống:
-- Bạn sẽ làm gì nếu server nhận được yêu cầu từ một client nhưng không gửi phản hồi?
+### III. Câu hỏi tình huống
+#### 1. Bạn sẽ làm gì nếu server nhận được yêu cầu từ một client nhưng không gửi phản hồi ?
 > Đưa ra các bước xử lý trong trường hợp server không phản hồi client và cách gỡ lỗi vấn đề.
 
-- Làm thế nào để bảo mật các kết nối mạng trong Java?
+#### 2. Làm thế nào để bảo mật các kết nối mạng trong Java ?
 > Hãy mô tả cách sử dụng các kỹ thuật như SSL/TLS trong Java để bảo mật các kết nối mạng.
 
-- Bạn sẽ làm gì để kiểm tra sự ổn định của một kết nối mạng giữa client và server trong Java?
+#### 3. Bạn sẽ làm gì để kiểm tra sự ổn định của một kết nối mạng giữa client và server trong Java ?
 > Mô tả cách kiểm tra và quản lý sự ổn định của kết nối, bao gồm kiểm soát timeout và retry.
 
-- Bạn có thể tối ưu hóa hiệu suất của một ứng dụng mạng Java như thế nào?
+#### 4. Bạn có thể tối ưu hóa hiệu suất của một ứng dụng mạng Java như thế nào ?
 > Đưa ra các cách để tối ưu hóa hiệu suất mạng trong ứng dụng Java, ví dụ như sử dụng kỹ thuật nén dữ liệu, tối ưu hóa buffer size, hoặc dùng NIO (Java Non-blocking I/O).
 
-- Hãy giải thích kiến trúc của một ứng dụng client-server bạn đã xây dựng.
+#### 5. Hãy giải thích kiến trúc của một ứng dụng client-server bạn đã xây dựng
 > Cung cấp ví dụ về một ứng dụng mạng bạn đã xây dựng và giải thích chi tiết về kiến trúc của nó, cách xử lý kết nối và trao đổi dữ liệu.
