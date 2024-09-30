@@ -18,6 +18,8 @@ Gói `java.net` chứa các class và interface cung cấp các chức năng net
 #### 3.1 TCP Sockets:
 TCP là giao thức phổ biến trong mạng client-server.
 
+![socket-api.png](socket-api.png)
+
 - **Server**: 
 Tạo một đối tượng ServerSocket lắng nghe kết nối trên một cổng cụ thể, Khi có kết nối từ client, server sẽ tạo ra một Socket để giao tiếp với client.
 ```java
