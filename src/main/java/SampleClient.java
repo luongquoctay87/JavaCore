@@ -6,7 +6,7 @@ import java.net.Socket;
 
 public class SampleClient {
     public static void main(String[] args) throws IOException {
-        Socket socket = new Socket("localhost", 1234);  // Kết nối đến server ở cổng 1234
+        Socket socket = new Socket("localhost", 4953);  // Kết nối đến server ở cổng 1234
 
         // Gửi dữ liệu đến server
         OutputStream output = socket.getOutputStream();

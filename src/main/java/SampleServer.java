@@ -6,7 +6,7 @@ import java.net.Socket;
 
 public class SampleServer {
     public static void main(String[] args) throws IOException {
-        ServerSocket serverSocket = new ServerSocket(1234);  // Mở cổng 1234
+        ServerSocket serverSocket = new ServerSocket(4953);  // Mở cổng 1234
         System.out.println("Server đang chờ kết nối...");
 
         Socket socket = serverSocket.accept();  // Chờ client kết nối
