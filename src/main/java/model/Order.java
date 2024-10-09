@@ -2,6 +2,7 @@ package src.main.java.model;
 
 public class Order {
     private int id;
+    private int productId;
     private String productName;
     private String productType;
 
@@ -12,8 +13,9 @@ public class Order {
     public Order() {
     }
 
-    public Order(int id, String productName, String productType, String vendor, int quantity, double price) {
+    public Order(int id, int productId, String productName, String productType, String vendor, int quantity, double price) {
         this.id = id;
+        this.productId = productId;
         this.productName = productName;
         this.productType = productType;
         this.vendor = vendor;
@@ -27,6 +29,14 @@ public class Order {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public int getProductId() {
+        return productId;
+    }
+
+    public void setProductId(int productId) {
+        this.productId = productId;
     }
 
     public String getProductName() {
@@ -77,6 +87,7 @@ public class Order {
     public String toString() {
         return "Order{" +
                 "id=" + id +
+                "productId=" + productId +
                 ", productName='" + productName + '\'' +
                 ", productType='" + productType + '\'' +
                 ", vendor='" + vendor + '\'' +
