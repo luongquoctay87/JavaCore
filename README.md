@@ -4,7 +4,7 @@
 Collectors trong Java là một lớp tiện ích trong gói java.util.stream được sử dụng để thực hiện các thao tác giảm (reduction) trên các phần tử của một Stream. Nó được sử dụng chủ yếu với API Stream để thu thập các phần tử của stream thành các dạng kết quả khác nhau như List, Set, Map, hoặc thực hiện các thao tác tổng hợp, thống kê.
 
 Lớp Collectors cung cấp nhiều phương thức tĩnh giúp chúng ta thực hiện các phép biến đổi và thu thập dữ liệu từ stream. Các phương thức này trả về một đối tượng Collector, đại diện cho chiến lược thu thập dữ liệu cụ thể.
-
+---------------------------
 ### 2. Các phương thức của Collectors
 
 | #  | Method                                                                                                                                                                                                                                | Mô tả                                                                                                                                                                                                                                                                                                                                                                                 |
