@@ -18,4 +18,8 @@ public class MockUp {
 
         return orders;
     }
+
+    void print(){
+        System.out.println("do something");
+    }
 }
