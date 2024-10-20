@@ -1,5 +1,8 @@
 package src.main.java.model;
 
+/**
+ * Order class by TayLQ
+ */
 public class Order {
     private int id;
     private int productId;

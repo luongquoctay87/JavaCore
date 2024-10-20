@@ -15,6 +15,7 @@ public class MockUp {
         orders.add(new Order(4, 104, "Samsung Watch5", "Watch", "Samsung", 2, 230.21));
         orders.add(new Order(5, 105, "MacBook pro", "Laptop", "Apple", 4, 233.25));
         orders.add(new Order(6, 106, "Nokia 2630", "Mobile", "Nokia", 6, 100));
+
         return orders;
     }
 }
